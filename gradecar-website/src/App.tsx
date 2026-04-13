@@ -1,10 +1,21 @@
-import { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
-import App from './App.tsx';
-import './index.css';
+import { Header } from './components/Header';
+import { Hero } from './components/Hero';
+import { Abstract } from './components/Abstract';
+import { Methodology } from './components/Methodology';
+import { Results } from './components/Results';
+import { Footer } from './components/Footer';
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-);
+export default function App() {
+  return (
+    <div className="min-h-screen flex flex-col">
+      <Header />
+      <main className="flex-grow">
+        <Hero />
+        <Abstract />
+        <Methodology />
+        <Results />
+      </main>
+      <Footer />
+    </div>
+  );
+}
