@@ -27,16 +27,23 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
+          
       - name: Install dependencies
         run: npm install
+        working-directory: gradecar-website  # <-- CHANGE THIS
+        
       - name: Build
         run: npm run build
+        working-directory: gradecar-website  # <-- CHANGE THIS
+        
       - name: Setup Pages
         uses: actions/configure-pages@v4
+        
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist'
+          path: 'gradecar-website'      # <-- CHANGE THIS
+          
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
