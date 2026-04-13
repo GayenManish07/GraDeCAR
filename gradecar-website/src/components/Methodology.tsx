@@ -57,7 +57,7 @@ export function Methodology() {
               
               {/* CHANGE THE SRC BELOW TO YOUR IMAGE NAME */}
               <img 
-                src="public/arch_final.png" 
+                src="arch_final.png" 
                 alt="Figure 1: Overall schematic of GraDeCAR" 
                 className="absolute inset-0 w-full h-full object-contain p-4" 
               />
@@ -81,7 +81,7 @@ export function Methodology() {
                 
                 {/* CHANGE THE SRC BELOW TO YOUR IMAGE NAME */}
                 <img 
-                  src="public/full_arch_new.png" 
+                  src="full_arch_new.png" 
                   alt="Figure 2: Relabelling Stage" 
                   className="absolute inset-0 w-full h-full object-contain p-4" 
                 />
@@ -103,7 +103,7 @@ export function Methodology() {
                 
                 {/* CHANGE THE SRC BELOW TO YOUR IMAGE NAME */}
                 <img 
-                  src="public/training_relabelling.png" 
+                  src="training_relabelling.png" 
                   alt="Figure 3: Relabeling Process" 
                   className="absolute inset-0 w-full h-full object-contain p-4" 
                 />
